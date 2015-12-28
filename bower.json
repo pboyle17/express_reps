@@ -1,0 +1,23 @@
+{
+  "name": "express_reps",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Paul Boyle <pboyle17@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/pboyle17/express_reps",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "underscore": "~1.8.3",
+    "backbone": "~1.2.3"
+  }
+}
