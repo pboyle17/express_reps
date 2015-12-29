@@ -7,7 +7,11 @@ var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
 var api = require('./routes/api');
+var foods = require('./routes/foods');
+var books = require('./routes/books');
+var music = require('./routes/music');
 
+require('./db/database');
 
 var app = express();
 
@@ -25,7 +29,10 @@ app.use(require('less-middleware')(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
-app.use('/api',api);
+// app.use('/api',api);
+app.use('/api/foods',foods);
+app.use('/api/books',books);
+app.use('/api/music',music);
 
 
 // catch 404 and forward to error handler

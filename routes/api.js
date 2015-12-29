@@ -19,4 +19,14 @@ router.get('/music', function(req,res,next){
   });
 });
 
+router.get('/', function(req, res, next) {
+  model.find(function(err,pancakes){
+    if(err) {
+      res.json(buildErrorResponse(err));
+    } else {
+      res.json(pancakes);
+    }
+  });
+});
+
 module.exports = router;
